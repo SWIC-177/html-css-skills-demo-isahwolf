@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'E-paw': "url('/img/E-paw.png')",
+      }
+    },
   },
   plugins: [],
 }
