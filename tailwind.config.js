@@ -1,13 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html"],
+  content: ["./index.html", "**/*.js"],
   theme: {
-    extend: {
-      backgroundImage: {
-        'E-paw': "url('/img/E-paw.png')",
-      }
-    },
+    extend: {},
   },
-  plugins: [],
-}
-
+  plugins: [require("@tailwindcss/forms")],
+};
