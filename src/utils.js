@@ -20,7 +20,7 @@ validate(val) {
     id: "message",
     msg: "Please enter a message between 10 and 100 characters.",
     validate(val) {
-        return val.length > 10 && val.length < 100;
+        return val.length >= 10 && val.length <= 100;
     },
 },
 ];
